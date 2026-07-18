@@ -311,12 +311,11 @@ The application follows a modular MATLAB implementation where each analytical co
 # Workflow
 
 <p align="center">
-<img src="workflow.png" width="900">
-</p>
+  
+<img width="1196" height="446" alt="image" src="https://github.com/user-attachments/assets/41062dc7-7215-49d7-993f-81bd1326740a" />
 
-<p align="center">
-<b>Figure 2.</b> Overall Workflow of the Proposed MATLAB GUI
 </p>
+<b>Figure 2.</b> Overall Workflow of the Proposed MATLAB GUI
 
 ---
 
@@ -329,7 +328,7 @@ The developed MATLAB application combines multiple analytical modules into a sin
 ## Complete GUI
 
 <p align="center">
-<img src="overall_gui.png" width="950">
+<img width="524" height="279" alt="image" src="https://github.com/user-attachments/assets/323819d7-6ef2-49f1-9181-71367e1030c6" />
 </p>
 
 <p align="center">
@@ -340,38 +339,15 @@ The main GUI serves as the central workspace of the application. It allows users
 
 ---
 
-## Transmission Line Parameter Evaluation
-
-<p align="center">
-<img src="parameter_gui.png" width="900">
-</p>
-
-<p align="center">
-<b>Figure 4.</b> Transmission Line Parameter Evaluation Module
-</p>
-
-This module computes the primary electrical parameters of an overhead transmission line from the conductor geometry and physical specifications entered by the user. It automatically evaluates resistance, inductance, capacitance, Geometric Mean Radius (GMR), and Geometric Mean Distance (GMD) for different conductor materials, bundle arrangements, and tower configurations.
-
----
-
-## Transmission Line Performance Analysis
-
-<p align="center">
-<img src="performance_gui.png" width="900">
-</p>
-
-<p align="center">
-<b>Figure 5.</b> Transmission Line Performance Analysis Module
-</p>
-
-The performance analysis module evaluates voltage regulation, transmission efficiency, sending-end quantities, and receiving-end quantities using the appropriate transmission line model. Depending on the transmission line length, the software automatically applies the Short, Medium, or Long transmission line equations and presents the computed results using numerical outputs and graphical plots.
-
----
 
 ## Loss Distribution Analysis
 
 <p align="center">
-<img src="loss_distribution.png" width="850">
+  <img width="276" height="280" alt="image" src="https://github.com/user-attachments/assets/34f3ee26-6d64-49a6-a5ec-8a0442d1d0c8" />
+
+  <img width="271" height="278" alt="image" src="https://github.com/user-attachments/assets/9b9d2b2e-8a86-4481-a4ce-05c4dd69221d" />
+
+  <img width="262" height="252" alt="image" src="https://github.com/user-attachments/assets/9e255625-2c23-488c-b27e-40d9896295d2" />
 </p>
 
 <p align="center">
@@ -385,7 +361,7 @@ The GUI estimates the contribution of different electrical losses affecting the 
 ## Ampacity Suitability Calculator
 
 <p align="center">
-<img src="ampacity_gui.png" width="700">
+<img width="357" height="405" alt="image" src="https://github.com/user-attachments/assets/be8944df-c0b1-427d-afa8-ad1a8bb552a3" />
 </p>
 
 <p align="center">
@@ -409,7 +385,7 @@ The developed GUI was tested under multiple conductor configurations, transmissi
 The temperature-dependent resistance calculations demonstrate the expected increase in conductor resistance with increasing operating temperature. Copper conductors exhibit lower resistance than aluminium conductors for identical dimensions, validating the correctness of the implemented temperature correction equations.
 
 <p align="center">
-<img src="resistance_results.png" width="850">
+<img width="432" height="337" alt="image" src="https://github.com/user-attachments/assets/bbc5f840-f634-4388-a6e4-d28201c12f36" />
 </p>
 
 <p align="center">
@@ -423,53 +399,11 @@ The temperature-dependent resistance calculations demonstrate the expected incre
 The calculated inductance and capacitance values vary according to conductor spacing, tower geometry, and the number of bundled conductors. The obtained values remain within practical engineering ranges and closely match standard transmission line calculations.
 
 <p align="center">
-<img src="rlc_results.png" width="850">
+<img width="393" height="607" alt="image" src="https://github.com/user-attachments/assets/76e1cd2d-94ea-47d5-9d9d-0e87f935e6c7" />
 </p>
 
 <p align="center">
 <b>Figure 9.</b> R-L-C Parameter Evaluation
-</p>
-
----
-
-## Transmission Line Efficiency
-
-The performance analysis confirms that transmission efficiency decreases as transmission line length increases due to the growing influence of electrical losses. The software clearly illustrates this behaviour for short, medium, and long transmission lines.
-
-<p align="center">
-<img src="efficiency_results.png" width="850">
-</p>
-
-<p align="center">
-<b>Figure 10.</b> Efficiency Comparison
-</p>
-
----
-
-## Loss Distribution
-
-The developed GUI enables users to visualize the contribution of different loss mechanisms to the overall transmission efficiency. This graphical representation helps identify the dominant losses for different operating conditions and transmission line models.
-
-<p align="center">
-<img src="loss_results.png" width="850">
-</p>
-
-<p align="center">
-<b>Figure 11.</b> Loss Distribution Analysis
-</p>
-
----
-
-## Ampacity Evaluation
-
-The ampacity suitability calculator successfully estimates conductor loading conditions using the developed weighted scoring methodology. Higher scores indicate safer operating conditions, while lower scores suggest conductor overloading or unsuitable environmental conditions.
-
-<p align="center">
-<img src="ampacity_results.png" width="700">
-</p>
-
-<p align="center">
-<b>Figure 12.</b> Ampacity Suitability Results
 </p>
 
 ---
@@ -486,7 +420,7 @@ The analytical equations implemented in the GUI were validated using representat
 | Inductance | 0.9866 mH/km | 1.00 mH/km | 1.34% |
 | Capacitance | 11.571 nF/km | 12.00 nF/km | 3.58% |
 
-The obtained error values demonstrate excellent agreement with theoretical calculations and verify the reliability of the proposed MATLAB GUI for transmission line analysis. :contentReference[oaicite:1]{index=1}
+The obtained error values demonstrate excellent agreement with theoretical calculations and verify the reliability of the proposed MATLAB GUI for transmission line analysis. 
 
 ---
 
