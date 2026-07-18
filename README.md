@@ -174,27 +174,23 @@ The application calculates sending-end and receiving-end quantities, determines 
 
 ### Voltage Regulation
 
-\[
-VR=\frac{V_s-V_r}{V_r}\times100
-\]
+[VR={V_s-V_r}/{V_r}*100]
 
 where
 
-- \(V_s\) = Sending End Voltage
-- \(V_r\) = Receiving End Voltage
+- (V_s) = Sending End Voltage
+- (V_r) = Receiving End Voltage
 
 ---
 
 ### Transmission Efficiency
 
-\[
-\eta=\frac{P_{out}}{P_{in}}\times100
-\]
+[eta={P_{out}}/{P_{in}}*100]
 
 where
 
-- \(P_{out}\) = Receiving End Power
-- \(P_{in}\) = Sending End Power
+- (P_{out}) = Receiving End Power
+- (P_{in}) = Sending End Power
 
 ---
 
@@ -210,18 +206,16 @@ The calculations begin with conductor geometry, from which the Geometric Mean Ra
 
 The resistance of the conductor varies with temperature and is calculated using
 
-\[
-R_T=R_{20}[1+\alpha(T-20)]
-\]
+[R_T=R_{20}[1+alpha(T-20)]]
 
 where
 
 | Symbol | Meaning |
 |---------|----------|
-| \(R_T\) | Resistance at operating temperature |
-| \(R_{20}\) | Resistance at 20°C |
-| \(\alpha\) | Temperature coefficient of resistance |
-| \(T\) | Operating temperature |
+| (R_T) | Resistance at operating temperature |
+| (R_{20}) | Resistance at 20°C |
+| (alpha) | Temperature coefficient of resistance |
+| (T) | Operating temperature |
 
 ---
 
@@ -229,9 +223,7 @@ where
 
 The inductance per conductor is calculated as
 
-\[
-L=2\times10^{-7}\ln\left(\frac{GMD}{GMR}\right)\;H/m
-\]
+[L=2*10^{-7}ln({GMD}/{GMR});H/m]
 
 which is automatically converted into practical engineering units for display inside the GUI.
 
@@ -241,13 +233,11 @@ which is automatically converted into practical engineering units for display in
 
 The capacitance of the transmission line is determined using
 
-\[
-C=\frac{2\pi\varepsilon}{\ln(GMD/GMR)}
-\]
+[C={2pi*varepsilon}/{ln(GMD/GMR)}]
 
 where
 
-- \( \varepsilon \) represents the permittivity of the surrounding medium.
+- (varepsilon) represents the permittivity of the surrounding medium.
 
 ---
 
@@ -263,15 +253,13 @@ These derivations allow the software to support symmetric and asymmetric conduct
 
 The Geometric Mean Distance is obtained as
 
-\[
-GMD=\sqrt[3]{D_{AB}D_{BC}D_{CA}}
-\]
+[GMD=sqrt[3]{D_{AB}*D_{BC}*D_{CA}}]
 
 where
 
-- \(D_{AB}\)
-- \(D_{BC}\)
-- \(D_{CA}\)
+- (D_{AB})
+- (D_{BC})
+- (D_{CA})
 
 represent the equivalent spacing between the individual phase conductors.
 
@@ -281,14 +269,12 @@ represent the equivalent spacing between the individual phase conductors.
 
 The conductor utilization factor is calculated as
 
-\[
-U=\frac{I_{max}}{I_{ampacity}}
-\]
+[U= {I_{max}}/{I_{ampacity}}]
 
 where
 
-- \(I_{max}\) = Maximum operating current
-- \(I_{ampacity}\) = Allowable conductor current
+- (I_{max}) = Maximum operating current
+- (I_{ampacity}) = Allowable conductor current
 
 The obtained utilization factor forms the basis for the ampacity suitability score presented by the GUI.
 
@@ -298,10 +284,7 @@ The obtained utilization factor forms the basis for the ampacity suitability sco
 
 The severity index estimates the degradation in transmission line performance during fault conditions and is calculated as
 
-\[
-Severity\ Index=
-1-\frac{\eta_{fault}}{\eta_{normal}}
-\]
+[Severity Index= 1-{eta_{fault}}/{eta_{normal}}]
 
 A higher severity index indicates a greater reduction in transmission efficiency and therefore a more severe operating condition.
 
