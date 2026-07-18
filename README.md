@@ -67,14 +67,11 @@ GUI-Based-Transmission-Line-Evaluation/
 
 │
 ├── matlab_files/
-│      ├── main_GUI.m
-│      ├── parameter_calculation.m
-│      ├── performance_analysis.m
-│      ├── ampacity_calculator.m
-│      ├── severity_index.m
-│      ├── loss_calculation.m
-│      └── ...
-│
+│      ├── TransmissionLineApp.m
+│      ├── AmpacityGUI.m
+├── Reports
+       ├── Validation.pdf
+       ├── Report.pdf
 ├── README.md
 ```
 
